@@ -1,0 +1,58 @@
+.Programes{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Programe img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.Programe{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption{
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+.caption i{
+    font-size: 30px;
+}
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.Programe:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+/* media query */
+
+@media (max-width: 685px){
+    .Programes{
+        flex-direction: column;
+    }
+    .Programe{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

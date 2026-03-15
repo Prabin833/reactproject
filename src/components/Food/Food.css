@@ -1,0 +1,38 @@
+.Beach-Food{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.food img {
+    width: 23%;
+    border-radius: 10px;
+}
+.Beach-Food button{
+    margin-top: 30px;
+    background-color: #1d4a57;
+    color: white;
+}
+.Beach-Food i {
+    font-size: 20px;
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+/* media query */
+
+@media (max-width: 685px){
+    .food{
+        flex-wrap: wrap;
+    }
+    .food img{
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}
